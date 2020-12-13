@@ -1,0 +1,292 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>-->
+<audio src="https://api.paugram.com/acgm/?play=true"  autoplay="autoplay"> </audio>
+<!--<meta http-equiv="refresh" content="0;url=mmd://page/main">-->
+<link rel="shortcut icon" type="XX/ico" href="./img/logo.gif" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0;" id="mixia_vpid">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/index.css">
+<style> 
+body{
+  /*background-image:url(./img/icon.gif);*/
+  background-color: #aaa !important;
+  background-repeat:no-repeat; 
+  background-position:center;
+  background-attachment: fixed
+} 
+</style>
+<style type="text/css">
+body{ font-size:17px; line-height:50px;background-color:#FCFCFC;}
+.middel {
+  text-align:center;
+  margin:auto;
+}
+.rowtop1{ 
+  line-height:52px;
+  height:54px;
+  width:100px;
+  color:#f9f9f9;
+  background-color:#3ba354;
+  font-size:16px;
+  font-weight:550;
+  font-family:Arial;
+  border:0px solid #483D8B;
+  -webkit-border-top-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  -moz-border-radius-topright:3px;
+  border-top-right-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  -moz-border-radius-bottomright:3px;
+  border-bottom-right-radius:3px;
+  -moz-box-shadow: inset 0px 0px 0px 0px #483D8B;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #483D8B;
+  box-shadow: inset 0px 0px 0px 0px #483D8B;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  margin-bottom:20px;
+}
+.rowtop1:hover {
+  background-color:#1c9439;
+}
+.rowtop{
+  line-height:52px;
+  height:54px;
+  width:150px;
+  color:#483D8B;
+  background-color:#ededed;
+  font-size:17px;
+  font-weight:550;
+  font-family:Arial;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #f5f5f5));
+  background:-moz-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+  border:1px solid #483D8B;
+  -webkit-border-top-left-radius:6px;
+  -moz-border-radius-topleft:6px;
+  border-top-left-radius:6px;
+  -webkit-border-top-right-radius:6px;
+  -moz-border-radius-topright:6px;
+  border-top-right-radius:6px;
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;
+  border-bottom-left-radius:6px;
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-bottom-right-radius:6px;
+  -moz-box-shadow: inset 0px 0px 0px 0px #483D8B;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #483D8B;
+  box-shadow: inset 0px 0px 0px 0px #483D8B;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+  margin-bottom:20px;
+}
+.rowtop:hover{
+  background-color:#f5f5f5;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #f5f5f5), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #f5f5f5 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+}
+body {
+  /*此处背景图自行替换*/
+  font: 150%/1.6 Baskerville, Palatino, serif;
+}
+.cao1{
+  margin-top: 3vh;
+  height: 30px;
+  width: 100vw;
+}
+.copyright{
+  color: black;
+  font-size: 4vw;
+  text-align: center;
+  bottom:0;
+  position:fixed;
+  height: 30px;
+  width: 100vw;
+}
+</style>
+<script type="text/javascript" src="/js/alert.js"></script>
+<script>
+function ispc(){
+    var userAgentInfo = navigator.userAgent;
+    var Agents = [
+      "Android",
+      "iPhone",
+      "SymbianOS",
+      "Windows Phone",
+      "iPad",
+      "iPod"
+    ];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+      if (userAgentInfo.indexOf(Agents[v]) > 0) {
+        flag = false;
+        break;
+      }
+    }
+    return flag;
+}
+function isllq(){
+var ua = navigator.userAgent.toLowerCase();
+if(ua.match(/MicroMessenger/i)=="micromessenger"){
+  return "weixin";
+} else if (ua.match(/QQ/i) == "qq"){
+  return "QQ";
+}
+return false;
+}
+function downMC(){
+    if(ispc() == false){
+      if(isllq() == "QQ"){
+        alert("请使用右上角三个点,从浏览器打开本页!再尝试点击!");
+      } else{
+        location.href="https://www.118pan.com/wap.php?action=space&uid=0&folder_id=11286";
+      }
+    } else {
+      alert("请自行百度下载启动器！");
+    }
+}
+function contact(id){
+  if(id == "qq"){
+    if(ispc() == true){
+      if(isllq() == "QQ"){
+        location.href="https://qm.qq.com/cgi-bin/qm/qr?k=q7keB45HI7su0vVuSUQx6KBtz9STSymr&noverify=0";
+      } else {
+        bullet('<img src="/img/qq.png">');
+      }
+    } else if(ispc() == false){
+      if (isllq() == "QQ"){
+        location.href="https://qm.qq.com/cgi-bin/qm/qr?k=q7keB45HI7su0vVuSUQx6KBtz9STSymr&noverify=0";
+      } else {
+        location.href="mqqwpa://im/chat?chat_type=wpa&uin=2185750134";
+      }
+    }
+  } else if(id == "mail"){
+    if(ispc() == true){
+      alert('邮箱：lyhiauaning@163.com');
+    } else if(ispc() == false){
+      location.href="mailto:lyhiauaning@163.com";
+    }
+  } else if(id == "qun"){
+    if(ispc() == true){
+      alert('群号码：821096499');
+    } else if(ispc() == false){
+      location.href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=821096499&card_type=group&source=qrcode";
+    }
+  } else if(id == "qun2"){
+    if(ispc() == true){
+      alert('群号码：624953187');
+    } else if(ispc() == false){
+      location.href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=624953187&card_type=group&source=qrcode";
+    }
+  } else if(id == "thyqun"){
+    if(ispc() == true){
+      alert('群号码：863645585');
+    } else if(ispc() == false){
+      location.href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=863645585&card_type=group&source=qrcode";
+    }
+  }
+}
+function minecraft(){
+  if(ispc() == true){
+    alert("请你手动打开，你是电脑！");
+  } else if(ispc() == false){
+    location.href="minecraft://";
+  }
+}
+</script>
+<title>起源镇服务器官网</title>
+</head>
+<body>
+<div class="cao">
+<div class="c-nav">
+  <div class="container navFlex">
+    <div class="flexItem">
+      <a href="/"><img  class="logo" src="./img/logo.gif" /></a>
+    </div>
+    <div class="flexItem hiden">
+      <img class="btnImg" src="./img/navBtn.png" />
+    </div>
+    <div class="flexItem show">
+      <ul>
+        <li><a href="JavaScript:minecraft();">启动游戏</a></li>
+        <li><a href="//www.mcbbs.net/">MCBBS</a></li>
+        <li><a href="JavaScript:downMC();">下载游戏</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+//用于判断导航栏的状态
+var toggle = true;
+ 
+//导航栏按钮
+$('.btnImg').click(function() {
+  if (toggle) {
+    $('.btnImg').css("border", "1px solid #b0ccf3");
+    toggle = false
+  } else {
+    $('.btnImg').css("border", "1px solid transparent");
+    toggle = true;
+  }
+  $(".show").slideToggle(300);
+})
+ 
+//窗口大小发生改变
+$(window).resize(function() {
+  //获取窗口宽度
+  var windSize = $(window).width();
+ 
+  if (windSize > 576) {
+    $(".show").slideDown(0);
+  } else {
+    $(".show").slideUp(0);
+  }
+});
+</script>
+<div class="cao1"></div>
+<img src="/img/1.jpg" style="height: 50vw; width: 100vw;" class="img1">
+<br><br>
+<div class="textcolor">
+<p>功能按钮</p>
+<a href="JavaScript:contact('qun');" class="rowtop">点击加入审核群</a>
+<a href="JavaScript:contact('qq');" class="rowtop">私聊腐竹！</a>
+<a href="JavaScript:minecraft();" class="rowtop">打开我的世界</a>
+<a href="JavaScript:alert('规则：\n1.不允许熊\n2.尽量不刷物品\n3.不允许开挂\n4.服务器允许使用红石\n攻略：\n1./back可以返回上一个死亡点！\n2./warp gui可以返回世界生成点哦！\n3./toa gui可以传送到玩家身边呢！\n4.现在是工业+更多武器的时代！');" class="rowtop"><p class="text1">服务器规则</p></a>
+<a href="//www.mcbbs.net/" class="rowtop">打开MCBBS</a>
+<a href="JavaScript:downMC();" class="rowtop">下载我的世界</a>
+<p>服务器介绍</p>
+<h6>一个普普通通的、没什么人玩的、困难的、纯生存服务器！</h6><br />
+<p>服务器管理员</p>
+<h6>腐竹、JiangSteve</h6><br />
+<p>服务器状态</p>
+<h6>长期关闭中</h6><br />
+<p>服务器版本</p>
+<h6>1.16</h6><br />
+<p>其他</p>
+<h6>因本服务器关闭，你可以去一下服务器玩一下</h6><br />
+<!--<h6>1.桃花源&nbsp;IP:212.64.64.108&nbsp;端口:19132&nbsp;白名单:需要&nbsp;服务器群：<a href="JavaScript:contact('thyqun');">点我加入群聊</a>&nbsp;服务器主题:末世生存</h6><br />-->
+</div>
+<p class="copyright">&copy;灵气 ｜ <a href="https://gulanguage.cn/">主页</a></p>
+</body>
+</html>
