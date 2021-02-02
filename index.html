@@ -1,16 +1,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>-->
-<audio src="https://api.paugram.com/acgm/?play=true"  autoplay="autoplay"> </audio>
-<!--<meta http-equiv="refresh" content="0;url=mmd://page/main">-->
+<!--<audio src="https://elythy.gitee.io/lib/music/background.mp3"  autoplay="autoplay"> </audio>-->
 <link rel="shortcut icon" type="XX/ico" href="./img/logo.gif" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0;" id="mixia_vpid">
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/index.css">
 <style type="text/css">
 html{
-  background-image: url(http://elythy.gitee.io/lib/img/background.png);
+  background-image: url(https://elythy.gitee.io/lib/img/mcbackground.png);
   background-color: #aaa;
   background-size: cover;
   -webkit-background-size: cover 100%;
@@ -127,6 +125,9 @@ body {
   height: 30px;
   width: 100vw;
 }
+p,h6{
+  color: white;
+}
 </style>
 <script type="text/javascript" src="/js/alert.js"></script>
 <script>
@@ -217,6 +218,18 @@ function minecraft(){
     location.href="minecraft://";
   }
 }
+function addserver(name,ip,port){
+  if(ispc() == true){
+    alert("我们是基岩版服务器，请您手动打开win10版，并添加服务器\nIP:server.gulanguage.cn\nPORT:19132");
+  } else if(ispc() == false){
+    location.href = "minecraft://?addExternalServer="+name+"%7C"+ip+":"+port;
+  }
+}
+function player(url){
+  var audio= new Audio(url);
+  audio.play();
+}
+player('https://elythy.gitee.io/lib/music/background.mp3');
 </script>
 <title>起源镇服务器官网</title>
 </head>
@@ -232,7 +245,7 @@ function minecraft(){
     </div>
     <div class="flexItem show">
       <ul>
-        <li><a href="JavaScript:minecraft();">启动游戏</a></li>
+        <li><a href="JavaScript:addserver('起源镇','server.gulanguage.cn','19132');">点击添加服务器</a></li>
         <li><a href="//www.mcbbs.net/">MCBBS</a></li>
         <li><a href="JavaScript:downMC();">下载游戏</a></li>
       </ul>
@@ -277,12 +290,13 @@ $(window).resize(function() {
 <p>功能按钮</p>
 <a href="JavaScript:contact('qun');" class="rowtop">点击加入审核群</a>
 <a href="JavaScript:contact('qq');" class="rowtop">私聊腐竹！</a>
-<a href="JavaScript:minecraft();" class="rowtop">打开我的世界</a>
+<a href="JavaScript:addserver('XiReiki','server.gulanguage.cn','19132');" class="rowtop">自动添加服务器</a>
 <a href="JavaScript:alert('规则：\n1.不允许熊\n2.尽量不刷物品\n3.不允许开挂\n4.服务器允许使用红石\n攻略：\n1./back可以返回上一个死亡点！\n2./warp gui可以返回世界生成点哦！\n3./toa gui可以传送到玩家身边呢！\n4.现在是工业+更多武器的时代！');" class="rowtop"><p class="text1">服务器规则</p></a>
 <a href="//www.mcbbs.net/" class="rowtop">打开MCBBS</a>
 <a href="JavaScript:downMC();" class="rowtop">下载我的世界</a>
 <p>服务器介绍</p>
-<h6>一个普普通通的、没什么人玩的、困难的、纯生存服务器！</h6><br />
+<h6>我们下过矿洞，我们上过高山，我们去过天堂，我们去过地狱，我们更去过末路之地，末影龙是我们的坐骑，凋零是我们的宠物，村民视我们如天煞孤星！我们有一群志同道合的伙伴，我们在哪里起源？“起源镇！”</h6><br />
+<h6>NAME：起源镇<br />IP：server.gulanguage.cn<br />PORT：19132</h6><br />
 <p>服务器管理员</p>
 <h6>腐竹、JiangSteve</h6><br />
 <p>服务器状态</p>
@@ -290,8 +304,7 @@ $(window).resize(function() {
 <p>服务器版本</p>
 <h6>1.16</h6><br />
 <p>其他</p>
-<h6>因本服务器关闭，你可以去一下服务器玩一下</h6><br />
-<!--<h6>1.桃花源&nbsp;IP:212.64.64.108&nbsp;端口:19132&nbsp;白名单:需要&nbsp;服务器群：<a href="JavaScript:contact('thyqun');">点我加入群聊</a>&nbsp;服务器主题:末世生存</h6><br />-->
+<h6>因本服务器关闭，你可以去一下服务器玩一下<br />或许你可以在：<a href="http://mcbe-server.com/">http://mcbe-server.com/</a>或者<a href="https://smgoro.top/motd/">https://smgoro.top/motd/</a>找到更多服务器</h6><br />
 </div>
 <p class="copyright">&copy;灵气 ｜ <a href="https://han.gulanguage.cn/">主页</a></p>
 </body>
