@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <title>
+      自动添加服务器中...
+    </title>
+  </head>
+  <body>
+    <script>
+      function ispc(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = [
+          "Android",
+          "iPhone",
+          "SymbianOS",
+          "Windows Phone",
+          "iPad",
+          "iPod"
+        ];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+          if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+          }
+        }
+        return flag;
+      }
+      function addserver(name,ip,port){
+        if(ispc() == true){
+          alert("我们是基岩版服务器，请您手动打开win10版，并添加服务器\nIP:server.gulanguage.cn\nPORT:19132");
+        } else if(ispc() == false){
+          location.href = "minecraft://?addExternalServer="+name+"%7C"+ip+":"+port;
+        }
+      }
+      addserver('起源镇','server.gulanguage.cn','19132');
+    </script>
+  </body>
+</html>
